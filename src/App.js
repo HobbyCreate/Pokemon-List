@@ -29,6 +29,7 @@ function App() {
         console.log(data)
         setPokemon(state => {
           state = [...state, data]
+          state.sort((a, b) => a.id > b.id ? 1 : -1)
           return state
         })
       })
