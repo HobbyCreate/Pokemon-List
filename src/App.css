@@ -1,38 +1,145 @@
-.App {
+
+@import url('https://fonts.googleapis.com/css2?family=Sono:wght@300;400;600&display=swap');
+
+
+body {
+  margin: 0;
+  padding: 0;
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-content: center;
+  align-items: center;
+  font-family: 'Sono', sans-serif;
+  background-color: rgb(8, 23, 37);
 }
 
-.App-link {
-  color: #61dafb;
+h1 {
+  color: aliceblue;
+  font-size: 3rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.input {
+  margin-right: 10px;
+  margin-bottom: 30px;
+  padding: 5px;
+  font-size: 1.2rem;
+  border: 2px solid rgb(179, 173, 173);
+  border-radius: 5px;
+}
+
+.loading{
+  font-size: 2.4rem;
+  color: aliceblue;
+  margin-top: 200px;
+}
+
+.Gobtn {
+  font-size: 1.2rem;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.Next,
+.Prev {
+  font-family: 'Sono', sans-serif;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 0 10px;
+  padding: 10px;
+  border-radius: 5px;
+  color: rgb(43, 50, 56);
+  background-color: rgb(212, 216, 233);
+}
+
+.Gobtn:hover,
+.card:hover,
+.Next:hover,
+.Prev:hover {
+  cursor: pointer;
+  background: rgb(131, 170, 178);
+}
+
+.card-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.poke-id {
+  font-family: 'Sono', sans-serif;
+  padding: 10px auto;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: right;
+  color: rgb(35, 54, 73);
+}
+
+.poke-name {
+  font-family: 'Sono', sans-serif;
+  margin-top: 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: rgb(35, 54, 73);
+}
+.type-container {
+  display: flex;
+}
+
+.type-fire,
+.type-water,
+.type-grass,
+.type-ground,
+.type-electric,
+.type-poison,
+.type-normal  {
+  font-family: 'Sono', sans-serif;
+  margin: 15px auto;
+  padding: 2px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: rgb(35, 54, 73);
+  border: 1px solid black;
+  width: 50%;
+  border-radius: 10px;
+}
+
+.type-fire {
+  background-color: rgb(213, 120, 120);
+}
+.type-water {
+  background-color: rgb(113, 186, 238);
+}
+.type-grass {
+  background-color: rgb(110, 188, 138);
+}
+.type-ground {
+  background-color: rgb(195, 154, 108);
+}
+.type-electric {
+  background-color: rgb(194, 218, 100);
+}
+.type-poison {
+  background-color: rgb(147, 92, 169);
+}
+.type-normal {
+  background-color: rgb(222, 231, 229);
+}
+
+.card {
+  margin: 10px 10px;
+  height: 260px;
+  width: 220px;
+  background: rgb(164, 171, 200);
+  border-radius: 10px;
+}
+
+.card:hover {
+  background: rgb(131, 170, 178);
+}
+
+.btnPrevNext-container {
+  margin-bottom: 30px;
 }
