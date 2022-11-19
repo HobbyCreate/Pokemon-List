@@ -40,10 +40,9 @@ h1 {
   border-radius: 5px;
 }
 
-.Next,
-.Prev {
+.btn {
   font-family: 'Sono', sans-serif;
-  font-size: 1.2rem;
+  font-size: 1.2rem; 
   font-weight: bold;
   margin: 0 10px;
   padding: 10px;
@@ -65,12 +64,12 @@ h1 {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  margin-bottom: 20px;
+  padding-bottom: 20px;
 }
 
 .poke-id {
   font-family: 'Sono', sans-serif;
-  padding: 10px auto;
+  margin: 10px auto;
   font-size: 1.2rem;
   font-weight: bold;
   text-align: right;
@@ -79,7 +78,7 @@ h1 {
 
 .poke-name {
   font-family: 'Sono', sans-serif;
-  margin-top: 10px;
+  padding-top: 10px;
   font-size: 1.2rem;
   font-weight: bold;
   color: rgb(35, 54, 73);
@@ -142,4 +141,36 @@ h1 {
 
 .btnPrevNext-container {
   margin-bottom: 30px;
+}
+
+.poke-dataCard {
+  display: flex;
+  flex-flow: column ;
+  align-content: center;
+  margin: 20px 10px;
+  height: 600px;
+  width: 350px;
+  background: rgb(164, 171, 200);
+  border-radius: 10px;
+}
+
+.big-img {
+  margin: 30px auto;
+  max-height: 270px;
+  min-height: 250px;
+  max-width: 270px;
+  min-width: 250px;
+}
+
+.stat,
+.name {
+  font-family: 'Sono', sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: rgb(35, 54, 73);
+}
+
+.name{
+  font-size: 2rem;
+  margin-top: 20px;
 }
